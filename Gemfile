@@ -49,3 +49,6 @@ gem "lita-wikipedia"
 gem "lita-wtf"
 gem "lita-xkcd"
 gem "lita-y"
+
+# monitoring
+gem "newrelic_rpm"
