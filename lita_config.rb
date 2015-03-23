@@ -20,7 +20,7 @@ Lita.configure do |config|
   # The adapter you want to connect with. Make sure you've added the
   # appropriate gem to the Gemfile.
   config.robot.adapter = :slack
-  config.robot.admins = [""]
+  config.robot.admins = ["U03DJL1J4"]
   config.adapters.slack.token = "xoxb-4146560239-7bhj4u4aMMCo95SjAHt3kHNd"
 
   ## Example: Set options for the Redis connection.
