@@ -25,7 +25,6 @@ Lita.configure do |config|
 
   ## Example: Set options for the Redis connection.
   config.redis[:url] = ENV["REDISTOGO_URL"]
-  config.redis.port = ENV["PORT"]
 
   ## Example: Set configuration for any loaded handlers. See the handler's
   ## documentation for options.
