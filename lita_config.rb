@@ -29,5 +29,27 @@ Lita.configure do |config|
 
   ## Example: Set configuration for any loaded handlers. See the handler's
   ## documentation for options.
-  # config.handlers.some_handler.some_config_key = "value"
+  config.handlers.forecast.api_key = '9e717b9447269b7dbffa7fa71e577e9a'
+
+  config.handlers.memegen.command_only = true
+  config.handlers.memegen.username = 'hevelius'
+  config.handlers.memegen.password = 'hevelius'
+
+  normalized_karma_user_term = ->(user_id, user_name) {
+    "@#{user_id} (#{user_name})" #=> @UUID (Liz Lemon)
+  }
+
+  config.handlers.karma.term_normalizer = lambda do |full_term|
+    term = full_term.to_s.strip.sub(/[<:]([^>:]+)[>:]/, '\1')
+    user = Lita::User.fuzzy_find(term.sub(/\A@/, ''))
+
+    if user
+      normalized_karma_user_term.call(user.id, user.name)
+    else
+      term.downcase
+    end
+  end
+
+  config.handlers.slack_karma_sync.user_term_normalizer = normalized_karma_user_term
+
 end
