@@ -5,7 +5,7 @@ Lita.configure do |config|
   config.robot.alias = "h"
 
   # The locale code for the language to use.
-  config.robot.locale = :pl
+  config.robot.locale = :en
 
   # The severity of messages to log. Options are:
   # :debug, :info, :warn, :error, :fatal
@@ -27,8 +27,7 @@ Lita.configure do |config|
   config.redis[:url] = ENV["REDISTOGO_URL"]
   config.http.port = ENV["PORT"]
 
-  ## Example: Set configuration for any loaded handlers. See the handler's
-  ## documentation for options.
+  config.handlers.responder.cleverbot = true
   config.handlers.forecast.api_key = '9e717b9447269b7dbffa7fa71e577e9a'
 
   config.handlers.memegen.command_only = true
