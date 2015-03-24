@@ -99,6 +99,8 @@ GEM
     lita-cowsay (0.1.1)
       lita (>= 4.0)
       ruby_cowsay
+    lita-custom-meme (0.1.0)
+      lita (>= 3.1)
     lita-dice (0.0.1)
       lita (>= 2.7)
     lita-dogebomb (1.0.0)
@@ -279,6 +281,7 @@ DEPENDENCIES
   lita-coin
   lita-corporate-bs-generator
   lita-cowsay
+  lita-custom-meme
   lita-dice
   lita-dogebomb
   lita-dolan

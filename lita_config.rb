@@ -51,4 +51,6 @@ Lita.configure do |config|
 
   config.handlers.slack_karma_sync.user_term_normalizer = normalized_karma_user_term
 
+  config.handlers.custom_meme.command_only = false
+
 end
