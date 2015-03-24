@@ -27,7 +27,7 @@ Lita.configure do |config|
   config.redis[:url] = ENV["REDISTOGO_URL"]
   config.http.port = ENV["PORT"]
 
-  config.handlers.responder.cleverbot = true
+  config.handlers.responder.cleverbot = false
   config.handlers.forecast.api_key = '9e717b9447269b7dbffa7fa71e577e9a'
 
   config.handlers.memegen.command_only = true
