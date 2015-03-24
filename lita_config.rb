@@ -24,7 +24,7 @@ Lita.configure do |config|
   config.adapters.slack.token = "xoxb-4146560239-7bhj4u4aMMCo95SjAHt3kHNd"
 
   ## Example: Set options for the Redis connection.
-  config.redis[:url] = ENV["REDISTOGO_URL"]
+  config.redis[:url] = ENV["REDISCLOUD_URL"]
   config.http.port = ENV["PORT"]
 
   config.handlers.responder.cleverbot = false
