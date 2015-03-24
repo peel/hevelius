@@ -53,4 +53,9 @@ Lita.configure do |config|
 
   config.handlers.custom_meme.command_only = false
 
+  config.handlers.static_meme.mapping = {
+      /(kanap.*)|greenfood/i => "http://i.imgur.com/KKX9ARf.jpg", # specify a single response image...
+      /deal with it/i => ["http://i.imgur.com/ykDuU.gif", "http://i.imgur.com/3PWHn.gif"] # ...or a set to randomly choose from
+    }
+
 end

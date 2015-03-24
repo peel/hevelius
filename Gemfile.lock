@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/killpack/lita-static-meme.git
+  revision: d6af3c6ac1399085bc3b3f04e9aa077f8dd300c6
+  specs:
+    lita-static-meme (1.0.0)
+      lita
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -311,6 +318,7 @@ DEPENDENCIES
   lita-shipit
   lita-slack
   lita-slack-karma-sync
+  lita-static-meme!
   lita-twss
   lita-urban
   lita-vader
