@@ -41,7 +41,7 @@ gem "lita-reverse_table_flip"
 gem "lita-rimshot"
 gem "lita-roll"
 gem "lita-shipit"
-# gem "lita-slack-karma-sync"
+# gem "lita-slack-karma-sync" # crashes lita w/ large number of users
 gem 'lita-static-meme', github: 'killpack/lita-static-meme'
 gem "lita-twss"
 gem "lita-urban"
@@ -51,6 +51,7 @@ gem "lita-wtf"
 gem "lita-xkcd"
 gem "lita-y"
 gem "lita-custom-meme"
+gem "lita-giphy"
 
 # monitoring
 gem "newrelic_rpm"

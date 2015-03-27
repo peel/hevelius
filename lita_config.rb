@@ -41,4 +41,6 @@ Lita.configure do |config|
       /deal with it/i => ["http://i.imgur.com/ykDuU.gif", "http://i.imgur.com/3PWHn.gif"] # ...or a set to randomly choose from
     }
 
+  config.handlers.giphy.api_key = "dc6zaTOxFJmzC"
+
 end
