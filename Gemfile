@@ -41,7 +41,7 @@ gem "lita-reverse_table_flip"
 gem "lita-rimshot"
 gem "lita-roll"
 gem "lita-shipit"
-gem "lita-slack-karma-sync"
+# gem "lita-slack-karma-sync"
 gem 'lita-static-meme', github: 'killpack/lita-static-meme'
 gem "lita-twss"
 gem "lita-urban"
