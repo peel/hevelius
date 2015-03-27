@@ -21,7 +21,7 @@ Lita.configure do |config|
   # appropriate gem to the Gemfile.
   config.robot.adapter = :slack
   config.robot.admins = ["U03DJL1J4"]
-  config.adapters.slack.token = "xoxb-4146560239-7bhj4u4aMMCo95SjAHt3kHNd"
+  config.adapters.slack.token = "xoxb-4218230331-DFlL4GwKU9HgXczzKrah6MCv"
 
   ## Example: Set options for the Redis connection.
   config.redis[:url] = ENV["REDISCLOUD_URL"]
