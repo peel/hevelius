@@ -38,7 +38,8 @@ Lita.configure do |config|
 
   config.handlers.static_meme.mapping = {
       /(kanap.*)|greenfood/i => "http://i.imgur.com/KKX9ARf.jpg", # specify a single response image...
-      /deal with it/i => ["http://i.imgur.com/ykDuU.gif", "http://i.imgur.com/3PWHn.gif"] # ...or a set to randomly choose from
+      /deal with it/i => ["http://i.imgur.com/ykDuU.gif", "http://i.imgur.com/3PWHn.gif"], # ...or a set to randomly choose from
+      /lobster/i => ["http://media.giphy.com/media/bxIAYZGzgsGU8/giphy.gif", "http://media.giphy.com/media/nGly4XkxGdwZy/giphy.gif", "http://media.giphy.com/media/zAHGio5ZlFvMY/giphy.gif"] # ...or a set to randomly choose from
     }
 
   config.handlers.giphy.api_key = "dc6zaTOxFJmzC"
