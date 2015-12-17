@@ -1,10 +1,12 @@
 source "https://rubygems.org"
-ruby "2.1.3"
+ruby "2.1.5"
 
 gem "lita"
 
 #adapter
 gem "lita-slack"
+
+gem "eventmachine", "~> 1.0.7", ">=1.0.7"
 
 #handlers
 gem "lita-ascii-art"
