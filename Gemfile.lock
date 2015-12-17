@@ -101,7 +101,7 @@ GEM
       lita (>= 3.0)
     lita-coin (0.0.3)
       lita (>= 2.3)
-    lita-conferenz (1.0.2)
+    lita-conferenz (1.0.3)
       lita (>= 4.0)
     lita-corporate-bs-generator (1.0.0)
       lita (>= 2.0)
