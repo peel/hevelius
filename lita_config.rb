@@ -1,7 +1,7 @@
 Lita.configure do |config|
   # The name your robot will use.
   config.robot.name = "Johnny Hevelius"
-  config.robot.mention_name = "hevelius"
+  config.robot.mention_name = ENV["USERNAME"]
   config.robot.alias = "h"
 
   # The locale code for the language to use.
@@ -20,7 +20,7 @@ Lita.configure do |config|
   # The adapter you want to connect with. Make sure you've added the
   # appropriate gem to the Gemfile.
   config.robot.adapter = :slack
-  config.robot.admins = ["U045C284V"]
+  config.robot.admins = [ENV["ROBOT_ADMIN"]]
   config.adapters.slack.token = ENV["SLACK_KEY"]
 
   ## Example: Set options for the Redis connection.
@@ -31,8 +31,8 @@ Lita.configure do |config|
   config.handlers.forecast.api_key = '9e717b9447269b7dbffa7fa71e577e9a'
 
   config.handlers.memegen.command_only = true
-  config.handlers.memegen.username = 'hevelius'
-  config.handlers.memegen.password = 'hevelius'
+  config.handlers.memegen.username = ENV["USERNAME"]
+  config.handlers.memegen.password = ENV["USERNAME"]
 
   config.handlers.custom_meme.command_only = false
 
