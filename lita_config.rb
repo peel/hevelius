@@ -41,7 +41,7 @@ Lita.configure do |config|
       /deal with it/i => ["http://i.imgur.com/ykDuU.gif", "http://i.imgur.com/3PWHn.gif"], # ...or a set to randomly choose from
       /lobster/i => ["http://media.giphy.com/media/bxIAYZGzgsGU8/giphy.gif", "http://media.giphy.com/media/nGly4XkxGdwZy/giphy.gif", "http://media.giphy.com/media/zAHGio5ZlFvMY/giphy.gif","http://media3.giphy.com/media/43CqcyCMVOPvO/giphy.gif","http://media3.giphy.com/media/sBnzU37Cnr03K/giphy.gif","http://media1.giphy.com/media/V99yowOGfCorm/giphy.gif","http://media4.giphy.com/media/g5zlGQyK3GjS0/giphy.gif","http://media3.giphy.com/media/e8IBXAqD9iY1O/giphy.gif", "http://media2.giphy.com/media/smsHPxUngn1xm/giphy.gif"],# ...or a set to randomly choose from
       /etam lobs/i => ["http://media4.giphy.com/media/qVv6wEyFxldRK/giphy.gif"],
-      /c'nie?/i => ["no raczej"],
+      /c'nie/i => ["no raczej"],
       /good good/i => ["https://www.youtube.com/watch?v=tfslY_AvhLw"]
     }
 
